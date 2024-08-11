@@ -9,7 +9,7 @@ services:
     volumes:
     - /var/lib/docker/containers:/fluentd/log/containers # Example: Reading docker logs
     - ./file:/fluentd/log/files/ #Example: Reading logs from a file
-    - ./configurations:/fluentd/etc/
+    - ./config:/fluentd/etc/
     logging:
       driver: "local"
   http-myapp:
